@@ -1,0 +1,81 @@
+<div class="administrador">
+    <section class="consultas">
+        <label  for="">Elige el mes para ver las consultas</label>
+        <input class="mes" type="text" placeholder="Escribe el mes"><br>
+        <button type="submit">Enviar</button><br>
+        
+        <table>
+
+            <tr>
+                <td>Nombre y Apellido</td>
+                <td class="nombre"></td>
+            </tr>
+            <tr >
+                <td>Número de pasajeros</td>
+                <td class="numero"></td>
+            </tr>         
+            <tr>
+                <td>Fecha_ingreso</td>
+                <td class="fecha_ingreso"></td>
+            </tr>          
+            <tr >
+                <td>Fecha_egreso</td>
+                <td class="fecha_egreso"></td>  
+            </tr>                  
+            <tr>
+                <td>Mail</td>
+                <td class="mail"></td>
+            </tr>          
+            <tr>
+                <td>Teléfono</td>
+                <td class="telefono"></td>
+            </tr>
+        </table>
+    </section>
+<br>
+    <section class="consultas">
+        <label for="">Elige el mes para la Reserva</label>
+        <input class="mes" type="text" placeholder="Escribe el mes"><br>
+        
+        <div class="divreserva">
+            <form action="" method="post">
+            <label for="">Nombre y apellido</label>
+            <input type="text" name="nombre_reserva" placeholder="">
+            <label for="">N° de pasajeros</label>
+            <input type="number" name="numero_reserva" placeholder="">
+            <label for="">Fecha de ingreso</label>
+            <input type="date" name="fi_reserva" placeholder="">
+            <label for="">Fecha de egreso</label>
+            <input type="date" name="fe_reserva" placeholder="">
+            <label for="">Seña</label>
+            <input type="number" name="seña" placeholder="">
+            <label for="">Monto total</label>
+            <input type="number" name="monto" placeholder="">
+            <label for="">Total de noches</label>
+            <input type="number" name="total_noches" placeholder="">
+            <br><br>
+            <input type="submit">
+        </div>          
+            </form>
+            
+    </section>
+</div>
+
+
+
+
+
+
+
+<style>
+    body{
+        background-color: blueviolet;
+    }
+</style>
+<script>
+    alert("Bienvenido Administrador")
+    const consultas = document.getElementById("verConsultas");
+    consultas.addEventListener('click', function mostrarConsultas(){ 
+        document.write("Te estoy mostrando las consultas");
+    })
+</script>
